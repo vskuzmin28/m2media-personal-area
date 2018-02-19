@@ -1,4 +1,5 @@
 @import '../styles/fonts.css';
+.left-side__links,
 .logo,
 a,
 a:hover,
@@ -41,6 +42,116 @@ ul {
 .no-margin {
   margin: 0 !important;
   float: none !important;
+}
+@media only screen and (min-width: 1100px) {
+  .left-side {
+    padding: 20px 20px;
+    position: fixed;
+    left: 0;
+    width: 19%;
+    height: 100vh;
+    background: #fff;
+    z-index: 999;
+    border-right: 1px solid #eee;
+  }
+  .for-logo {
+    margin-bottom: 40px;
+    height: 48px;
+    width: auto;
+  }
+  .for-logo h2 {
+    margin-top: 10px;
+    float: left;
+    font: 20px 'robotomedium';
+    color: #000;
+  }
+  .logo {
+    margin-right: 20px;
+    float: left;
+    display: block;
+    margin-top: 0;
+    width: 140px;
+    height: 48px;
+    background: #0086ce;
+    font: 18px 'robotobold_italic';
+    line-height: 48px;
+    text-align: center;
+    color: #fff;
+  }
+  .logo:hover {
+    background: #22252f;
+    color: #fff;
+    text-decoration: none;
+  }
+  .left-side__links {
+    margin-top: 35vh;
+    padding: 20px;
+    border-radius: 4px;
+    width: auto;
+    height: auto;
+    background: #0095e6;
+  }
+  .left-side__links:hover {
+    background: #22252f;
+  }
+  .left-side__links ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .left-side__links ul li {
+    margin-bottom: 14px;
+  }
+  .left-side__links ul li:last-child {
+    margin-bottom: 0;
+  }
+  .left-side__links ul li a,
+  .left-side__links ul li a:hover {
+    display: block;
+    font: 14px 'robotoregular';
+    color: #fff;
+  }
+  .left-side__links ul li a:hover,
+  .left-side__links ul li a:hover:hover {
+    text-decoration: underline;
+  }
+  .small-basket {
+    bottom: 20px;
+    position: absolute;
+    width: 90%;
+    height: 40px;
+  }
+  .small-basket a,
+  .small-basket a:hover {
+    margin: 0 auto;
+    display: block;
+    width: 150px;
+    height: 40px;
+    padding-left: 44px;
+    background: url('../img/icons/basket.png') no-repeat left;
+    font: 14px 'robotoregular';
+    line-height: 44px;
+    color: #000;
+  }
+  .small-basket a span,
+  .small-basket a:hover span {
+    padding-left: 4px;
+    color: #0086ce;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  .map {
+    position: fixed;
+    right: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+    background: #000;
+    -webkit-box-shadow: -9px -1px 11px -9px #454445;
+    -moz-box-shadow: -9px -1px 11px -9px #454445;
+    box-shadow: -9px -1px 11px -9px #454445;
+    z-index: 3;
+  }
 }
 /*
 LESS variables are information about icon's compiled state, stored under its original file name

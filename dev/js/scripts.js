@@ -30,49 +30,6 @@ $('.send-form').submit(function() {
     return false;
   })
 
-// scroll smooth
-
-var easeInQuad = new SmoothScroll('[data-easing="easeInQuad"]', {easing: 'easeInQuad'});
-
-// wow animate elements
-
-new WOW().init()
-
-// sliders
-
-// portfolio
-
-$('.portfolio-block').responsiveSlides({
-  auto: false,
-  pager: true,
-  nav: true,
-  speed: 500,
-  maxwidth: 1040,
-  //namespace: "centered-controls"
-})
-
-// reviews
-
-$('.projects-block').responsiveSlides({
-  auto: false,
-  pager: false,
-  nav: true,
-  speed: 500,
-  maxwidth: 1040,
-  //namespace: "centered-controls"
-})
-
-// card
-
-$('.card-block').responsiveSlides({
-  auto: false,
-  pager: true,
-  nav: false,
-  speed: 500,
-  maxwidth: 9999,
-  //namespace: "centered-controls"
-})
-
 // view full review in slider
 
 $('.review-show').click(function(e){
@@ -130,18 +87,22 @@ $('.portfolio__item__tabs__tab-two').click(function(e){
   $('.portfolio__item__tabs__tab-content-two').show();
 })
 
-      function initMap() {
-        var uluru = {lat: -25.363, lng: 131.044};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-
 $('.nav-click').click(function(){
   $('.nav').toggle();
 })
+
+// google map
+
+// google map
+
+function initMap() {
+  var uluru = {lat: 47.2357137, lng: 39.701505};
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 12,
+    center: uluru
+  });
+  var marker = new google.maps.Marker({
+    position: uluru,
+    map: map
+  });
+}

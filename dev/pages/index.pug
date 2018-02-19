@@ -19,8 +19,14 @@ html(lang='ru')
 
     include ../blocks/block-left-side/left-side.pug
 
+    // map
+
+    include ../blocks/block-map/map.pug
+
     // scripts
 
+    script(async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDshpMx0Ic1L6FIp5fJNYxFTQimPncowmY&callback=initMap"
+  type="text/javascript")
     script(src='../js/jquery-3.2.1.min.js')
     script(src='../js/jquery.bpopup.min.js')
     script(src='../js/jquery.fancybox.min.js')

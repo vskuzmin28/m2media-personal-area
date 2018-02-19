@@ -1,5 +1,120 @@
 @media only screen and (min-width : @desktop) {
 
+	// left side
 
+	.left-side {
+		padding: 20px 20px;
+		position: fixed;
+		left: 0;
+		width: 19%;
+		height: 100vh;
+		background: @white;
+		z-index: 999;
+		border-right: 1px solid #eee;
+	}
+
+	.for-logo {
+		margin-bottom: 40px;
+		height: 48px;
+		width: auto;
+
+		h2 {
+			margin-top: 10px;
+			float: left;
+			font: 20px 'robotomedium';
+			color: @black;
+		}
+
+	}
+
+	.logo {
+		margin-right: 20px;
+		float: left;
+		display: block;
+		margin-top: 0;
+		width: 140px;
+		height: 48px;
+		background: #0086ce;
+		font: 18px 'robotobold_italic';
+		line-height: 48px;
+		text-align: center;
+		color: #fff;
+	  }
+	  .logo:hover {
+		background: #22252f;
+		color: @white;
+		text-decoration: none;
+	  }
+
+	  .left-side__links {
+		margin-top: 35vh;
+		padding: 20px;
+		border-radius: 4px;
+		width: auto;
+		height: auto;
+		background: #0095e6;
+
+		&:hover {
+			background: #22252f;
+		}
+
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+
+			li {
+				margin-bottom: 14px;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+
+			}
+
+			li a, li a:hover {
+				display: block;
+				font: 14px 'robotoregular';
+				color: @white;
+
+				&:hover {
+					text-decoration: underline
+				}
+
+			}
+
+		}
+
+	  }
+
+	  // small basket
+
+	  .small-basket {
+		bottom: 20px;
+		position: absolute;
+		width: 90%;
+		height: 40px;
+		//background: @black;
+
+		a, a:hover {
+			margin: 0 auto;
+			display: block;
+			width: 150px;
+			height: 40px;
+			padding-left: 44px;
+			background: url('../img/icons/basket.png') no-repeat left;
+
+			font: 14px 'robotoregular';
+			line-height: 44px;
+			color: @black;
+
+			span {
+				padding-left: 4px;
+				color: #0086ce;
+			}
+
+		}
+
+	  }
 
 }
