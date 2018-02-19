@@ -1,0 +1,76 @@
+.popup.popup-about-client
+
+	a.popup-close(href="#" title="")
+
+	h4
+		| Личные данные
+	
+	form(action="/" method="post")
+
+		ul
+			li
+				input(type="radio" id="f-option" name="selector")
+				label(for="f-option")
+					| Юр. лицо
+				.check
+
+			li
+				input(type="radio" id="f-option" name="selector")
+				label(for="f-option")
+					| ИП
+				.check
+
+			li
+				input(type="radio" id="f-option" name="selector")
+				label(for="f-option")
+					| Частное лицо
+				.check
+
+		// field
+		.popup__field
+			input(type="text" name="name" placeholder="ФИО")
+
+		// field
+		.popup__field
+			input(type="text" name="inn" placeholder="ИНН")
+
+		// field
+		.popup__field
+			input(type="text" name="ogrn" placeholder="ОГРН")
+
+		// field
+		.popup__field
+			input(type="text" name="other" placeholder="Прочее")
+		
+		// field
+		.popup__field-file
+			p
+				| Загрузить видеоролик
+			input(type="file" name="f")
+
+		// button
+
+		.popup__button
+			button
+				| Сохранить
+
+.popup.popup-reporting
+
+	a.popup-close(href="#" title="")
+
+	h4
+		| Отчетность
+
+	ul
+		li
+			a(href="#" title="")
+				| Акты выполненных работ
+		li
+			a(href="#" title="")
+				| Счета фактуры
+		li
+			a(href="#" title="")
+				| Счета оплат
+		li
+			a(href="#" title="")
+				| Выставленные ранее счета

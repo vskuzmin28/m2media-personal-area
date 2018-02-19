@@ -139,6 +139,102 @@ ul {
     color: #0086ce;
   }
 }
+@media only screen and (min-width: 320px) and (max-width: 1100px) {
+  .left-side {
+    padding: 20px 20px;
+    position: fixed;
+    left: 0;
+    width: 19%;
+    height: 100vh;
+    background: #fff;
+    z-index: 999;
+    border-right: 1px solid #eee;
+  }
+  .for-logo {
+    margin-bottom: 40px;
+    height: 48px;
+    width: auto;
+  }
+  .for-logo h2 {
+    margin-top: 10px;
+    float: left;
+    font: 20px 'robotomedium';
+    color: #000;
+  }
+  .logo {
+    margin-right: 20px;
+    float: left;
+    display: block;
+    margin-top: 0;
+    width: 140px;
+    height: 48px;
+    background: #0086ce;
+    font: 18px 'robotobold_italic';
+    line-height: 48px;
+    text-align: center;
+    color: #fff;
+  }
+  .logo:hover {
+    background: #22252f;
+    color: #fff;
+    text-decoration: none;
+  }
+  .left-side__links {
+    margin-top: 35vh;
+    padding: 20px;
+    border-radius: 4px;
+    width: auto;
+    height: auto;
+    background: #0095e6;
+  }
+  .left-side__links:hover {
+    background: #22252f;
+  }
+  .left-side__links ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .left-side__links ul li {
+    margin-bottom: 14px;
+  }
+  .left-side__links ul li:last-child {
+    margin-bottom: 0;
+  }
+  .left-side__links ul li a,
+  .left-side__links ul li a:hover {
+    display: block;
+    font: 14px 'robotoregular';
+    color: #fff;
+  }
+  .left-side__links ul li a:hover,
+  .left-side__links ul li a:hover:hover {
+    text-decoration: underline;
+  }
+  .small-basket {
+    bottom: 20px;
+    position: absolute;
+    width: 90%;
+    height: 40px;
+  }
+  .small-basket a,
+  .small-basket a:hover {
+    margin: 0 auto;
+    display: block;
+    width: 150px;
+    height: 40px;
+    padding-left: 44px;
+    background: url('../img/icons/basket.png') no-repeat left;
+    font: 14px 'robotoregular';
+    line-height: 44px;
+    color: #000;
+  }
+  .small-basket a span,
+  .small-basket a:hover span {
+    padding-left: 4px;
+    color: #0086ce;
+  }
+}
 @media only screen and (min-width: 1100px) {
   .map {
     position: fixed;
@@ -151,6 +247,214 @@ ul {
     -moz-box-shadow: -9px -1px 11px -9px #454445;
     box-shadow: -9px -1px 11px -9px #454445;
     z-index: 3;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 1100px) {
+  .map {
+    position: fixed;
+    right: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+    background: #000;
+    -webkit-box-shadow: -9px -1px 11px -9px #454445;
+    -moz-box-shadow: -9px -1px 11px -9px #454445;
+    box-shadow: -9px -1px 11px -9px #454445;
+    z-index: 3;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 1100px) {
+  .popup-about-client,
+  .popup-reporting {
+    display: none;
+  }
+  .popup {
+    padding: 20px;
+    position: relative;
+    width: 350px;
+    height: auto;
+    border-radius: 6px;
+    background: #fff;
+  }
+  .popup p {
+    text-align: center;
+    line-height: 200px;
+    color: #000 !important;
+    text-decoration: underline;
+  }
+  .popup h4 {
+    margin: 0;
+    margin-bottom: 18px;
+    font: 20px 'robotomedium';
+  }
+  .popup input[type=text],
+  .popup input[type=password] {
+    padding: 0 14px;
+    margin-bottom: 14px;
+    width: 100%;
+    height: 34px;
+    border: 1px solid #a4a4a4;
+    border-radius: 4px;
+    font: 14px 'robotoregular';
+    color: #000;
+  }
+  .popup button {
+    margin: 20px 0 0 0;
+    float: right;
+    width: 180px;
+    height: 36px;
+    border: 0;
+    border-radius: 4px;
+    background: #0086cf;
+    font: 14px 'robotomedium';
+    color: #fff;
+  }
+  .popup button:hover {
+    background: #0095e6;
+  }
+  .popup-info {
+    padding: 20px 20px 10px 20px;
+    background: #0086cf;
+    border-radius: 4px;
+  }
+  .popup-info p {
+    font: 12px 'robotoregular';
+    color: #fff !important;
+    line-height: 20px;
+    text-align: left;
+    text-decoration: none;
+  }
+  .popup-close {
+    right: -30px;
+    top: -30px;
+    position: absolute;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url('../img/icon-close.png') no-repeat;
+  }
+  .popup-forgot {
+    margin-top: 26px;
+    display: block;
+    position: absolute;
+    width: 160px;
+    height: 30px;
+    color: #000;
+    text-decoration: underline;
+  }
+  .popup-forgot:hover {
+    color: #0086cf;
+  }
+  .popup ul {
+    list-style: none;
+    margin-left: 20px;
+  }
+  .popup ul label {
+    font: 14px 'robotoregular';
+    color: #000;
+  }
+  .popup__field-file p {
+    font: 14px 'robotoregular';
+    color: #000;
+    text-align: left;
+    text-decoration: none;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  .popup-about-client,
+  .popup-reporting {
+    display: none;
+  }
+  .popup {
+    padding: 20px;
+    position: relative;
+    width: 350px;
+    height: auto;
+    border-radius: 6px;
+    background: #fff;
+  }
+  .popup p {
+    text-align: center;
+    line-height: 200px;
+    color: #000 !important;
+    text-decoration: underline;
+  }
+  .popup h4 {
+    margin: 0;
+    margin-bottom: 18px;
+    font: 20px 'robotomedium';
+  }
+  .popup input[type=text],
+  .popup input[type=password] {
+    padding: 0 14px;
+    margin-bottom: 14px;
+    width: 100%;
+    height: 34px;
+    border: 1px solid #a4a4a4;
+    border-radius: 4px;
+    font: 14px 'robotoregular';
+    color: #000;
+  }
+  .popup button {
+    margin: 20px 0 0 0;
+    float: right;
+    width: 180px;
+    height: 36px;
+    border: 0;
+    border-radius: 4px;
+    background: #0086cf;
+    font: 14px 'robotomedium';
+    color: #fff;
+  }
+  .popup button:hover {
+    background: #0095e6;
+  }
+  .popup-info {
+    padding: 20px 20px 10px 20px;
+    background: #0086cf;
+    border-radius: 4px;
+  }
+  .popup-info p {
+    font: 12px 'robotoregular';
+    color: #fff !important;
+    line-height: 20px;
+    text-align: left;
+    text-decoration: none;
+  }
+  .popup-close {
+    right: -30px;
+    top: -30px;
+    position: absolute;
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url('../img/icon-close.png') no-repeat;
+  }
+  .popup-forgot {
+    margin-top: 26px;
+    display: block;
+    position: absolute;
+    width: 160px;
+    height: 30px;
+    color: #000;
+    text-decoration: underline;
+  }
+  .popup-forgot:hover {
+    color: #0086cf;
+  }
+  .popup ul {
+    list-style: none;
+    margin-left: 20px;
+  }
+  .popup ul label {
+    font: 14px 'robotoregular';
+    color: #000;
+  }
+  .popup__field-file p {
+    font: 14px 'robotoregular';
+    color: #000;
+    text-align: left;
+    text-decoration: none;
   }
 }
 /*

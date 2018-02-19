@@ -25,14 +25,71 @@
       <!-- links-->
       <div class="left-side__links">
         <ul>
-          <li><a href="#" title="">Личный данные</a></li>
-          <li><a href="#" title="">Отчетность</a></li>
+          <li><a class="call-popup-about-client" href="#" title="">Личные данные</a></li>
+          <li><a class="call-popup-reporting" href="#" title="">Отчетность</a></li>
         </ul>
       </div>
       <div class="small-basket"><a href="#" title="">Оплатить<span>(2)</span></a></div>
     </div>
     <!-- map-->
     <div class="map" id="map"></div>
+    <!-- popups-->
+    <div class="popup popup-about-client"><a class="popup-close" href="#" title=""></a>
+      <h4>Личные данные</h4>
+      <form action="/" method="post">
+        <ul>
+          <li>
+            <input type="radio" id="f-option" name="selector">
+            <label for="f-option">Юр. лицо</label>
+            <div class="check"></div>
+          </li>
+          <li>
+            <input type="radio" id="f-option" name="selector">
+            <label for="f-option">ИП</label>
+            <div class="check"></div>
+          </li>
+          <li>
+            <input type="radio" id="f-option" name="selector">
+            <label for="f-option">Частное лицо</label>
+            <div class="check"></div>
+          </li>
+        </ul>
+        <!-- field-->
+        <div class="popup__field">
+          <input type="text" name="name" placeholder="ФИО">
+        </div>
+        <!-- field-->
+        <div class="popup__field">
+          <input type="text" name="inn" placeholder="ИНН">
+        </div>
+        <!-- field-->
+        <div class="popup__field">
+          <input type="text" name="ogrn" placeholder="ОГРН">
+        </div>
+        <!-- field-->
+        <div class="popup__field">
+          <input type="text" name="other" placeholder="Прочее">
+        </div>
+        <!-- field-->
+        <div class="popup__field-file">
+          <p>Загрузить видеоролик</p>
+          <input type="file" name="f">
+        </div>
+        <!-- button-->
+        <div class="popup__button">
+          <button>Сохранить</button>
+        </div>
+      </form>
+    </div>
+    <div class="popup popup-reporting"><a class="popup-close" href="#" title=""></a>
+      <h4>Отчетность</h4>
+      <ul>
+        <li><a href="#" title="">Акты выполненных работ</a></li>
+        <li><a href="#" title="">Счета фактуры</a></li>
+        <li><a href="#" title="">Счета оплат</a></li>
+        <li><a href="#" title="">Выставленные ранее счета</a></li>
+      </ul>
+    </div>
     <!-- scripts-->
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDshpMx0Ic1L6FIp5fJNYxFTQimPncowmY&amp;callback=initMap" type="text/javascript"></script>
     <script src="../js/jquery-3.2.1.min.js"></script>
