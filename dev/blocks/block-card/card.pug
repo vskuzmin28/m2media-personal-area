@@ -1,0 +1,58 @@
+.card
+
+	// form
+
+	form(action="/" method="post")
+
+	// field
+
+	.card__field-input
+
+		label
+			input(type="radio")
+			p
+				| Внешняя сторона <br/> Цена 6000 руб. / мес.
+
+	// field
+
+	.card__field-input
+
+		label
+			input(type="radio")
+			p
+				| Внутренняя сторона <br/> Цена 6000 руб. / мес.
+
+	// field
+
+	.card__field-input
+
+		label
+			input(type="radio")
+			p
+				| Обе сторона <br/> Цена 5000 руб. / мес.
+
+	// field
+
+	.card__field-terms
+
+		p
+			| Срок аренды
+		span#termsValue
+			| 1
+		small
+			| мес.
+		input#r1(type="range" value="1" max="12" oninput="fun1()" step="1")
+
+
+
+	// detail
+
+	.card__detail
+		span
+			| Итого: % руб.
+		p
+			| стоимость с учетом скидки
+		button.card__detail__add-in-basket
+			| Добавить в корзину
+		button.card__detail__buy
+			| Купить

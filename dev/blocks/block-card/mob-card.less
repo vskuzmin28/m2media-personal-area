@@ -1,0 +1,73 @@
+@media only screen and (min-width : @mobile) and  (max-width : @desktop) {
+
+	// card
+
+	.card {
+		top: 5%;
+		left: 22%;
+
+		position: absolute;
+		padding: 20px;
+		width: 450px;
+		height: auto;
+		overflow: hidden;
+
+		background: @white;
+		border-radius: 4px;
+
+		z-index: 999;
+
+		button {
+			background: #2595e2;
+			border: 0;
+			border-radius: 4px;
+			height: 36px;
+			padding: 0 10px;
+			margin-left: 6px;
+
+			font: 14px 'robotoregular';
+			color: #fff;
+
+			&:hover {
+				background: #2587cb;
+			}
+
+		}
+
+	}
+
+	.card__field-input {
+		float: left;
+		width: 200px;
+		height: 80px;
+	}
+
+	.card__field-terms {
+		margin-bottom: 40px;
+		float: left;
+		width: 200px;
+
+		p {
+			font: 14px 'robotoregular';
+			color: @black;
+		}
+
+	}
+
+	.card__detail {
+		height: auto;
+		text-align: right;
+
+		span {
+			font: 16px 'robotomedium';
+			color: @black;
+		}
+
+		p {
+			font: 12px 'robotolight';
+			color: @black;
+		}
+
+	}
+	
+}
