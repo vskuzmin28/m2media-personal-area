@@ -44,31 +44,87 @@ ul {
   float: none !important;
 }
 @media only screen and (min-width: 1100px) {
-  .map {
-    position: fixed;
-    right: 0;
-    width: 100%;
+  .basket {
+    top: 55%;
+    left: 22%;
+    position: absolute;
+    padding: 20px;
+    width: 450px;
+    height: auto;
     overflow: hidden;
-    height: 100vh;
-    background: #000;
-    -webkit-box-shadow: -9px -1px 11px -9px #454445;
-    -moz-box-shadow: -9px -1px 11px -9px #454445;
-    box-shadow: -9px -1px 11px -9px #454445;
-    z-index: 3;
+    background: #fff;
+    border-radius: 4px;
+    z-index: 999;
+  }
+  .basket h4 {
+    margin: 0;
+    margin-bottom: 18px;
+    font: 20px 'robotomedium';
+  }
+  .basket table {
+    border-collapse: collapse;
+  }
+  .basket td {
+    padding-bottom: 20px;
+    float: left;
+    width: 78px;
+    margin-right: 4px;
+    font: 12px 'robotoregular';
+  }
+  .basket button {
+    background: #2595e2;
+    border: 0;
+    border-radius: 4px;
+    height: 36px;
+    padding: 0 10px;
+    margin-left: 6px;
+    font: 14px 'robotoregular';
+    color: #fff;
+  }
+  .basket button:hover {
+    background: #2587cb;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 1100px) {
-  .map {
-    position: fixed;
-    right: 0;
-    width: 100%;
+  .basket {
+    top: 55%;
+    left: 22%;
+    position: absolute;
+    padding: 20px;
+    width: 450px;
+    height: auto;
     overflow: hidden;
-    height: 100vh;
-    background: #000;
-    -webkit-box-shadow: -9px -1px 11px -9px #454445;
-    -moz-box-shadow: -9px -1px 11px -9px #454445;
-    box-shadow: -9px -1px 11px -9px #454445;
-    z-index: 3;
+    background: #fff;
+    border-radius: 4px;
+    z-index: 999;
+  }
+  .basket h4 {
+    margin: 0;
+    margin-bottom: 18px;
+    font: 20px 'robotomedium';
+  }
+  .basket table {
+    border-collapse: collapse;
+  }
+  .basket td {
+    padding-bottom: 20px;
+    float: left;
+    width: 78px;
+    margin-right: 4px;
+    font: 12px 'robotoregular';
+  }
+  .basket button {
+    background: #2595e2;
+    border: 0;
+    border-radius: 4px;
+    height: 36px;
+    padding: 0 10px;
+    margin-left: 6px;
+    font: 14px 'robotoregular';
+    color: #fff;
+  }
+  .basket button:hover {
+    background: #2587cb;
   }
 }
 @media only screen and (min-width: 1100px) {
@@ -96,6 +152,11 @@ ul {
   }
   .card button:hover {
     background: #2587cb;
+  }
+  .card h4 {
+    margin: 0;
+    margin-bottom: 18px;
+    font: 20px 'robotomedium';
   }
   .card__field-input {
     float: left;

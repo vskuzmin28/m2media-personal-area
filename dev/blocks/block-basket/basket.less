@@ -1,18 +1,58 @@
 @media only screen and (min-width : @desktop) {
 
-	// map
+	// card
 
-	.map {
-		position: fixed;
-		right: 0;
-		width: 100%;
+	.basket {
+		top: 55%;
+		left: 22%;
+
+		position: absolute;
+		padding: 20px;
+		width: 450px;
+		height: auto;
 		overflow: hidden;
-		height: 100vh;
-		background: #000;
-		-webkit-box-shadow: -9px -1px 11px -9px rgba(69,68,69,1);
-		-moz-box-shadow: -9px -1px 11px -9px rgba(69,68,69,1);
-		box-shadow: -9px -1px 11px -9px rgba(69,68,69,1);
-		z-index: 3;
+
+		background: @white;
+		border-radius: 4px;
+
+		z-index: 999;
+
+		h4 {
+			margin: 0;
+			margin-bottom: 18px;
+			font: 20px 'robotomedium';
+		}
+
+		table {
+			border-collapse: collapse;
+		}
+
+		td { 
+			padding-bottom: 20px;
+			float: left; 
+			width: 78px;
+			margin-right: 4px; 
+			font: 12px 'robotoregular';
+			//padding: 5px;
+		}
+
+		button {
+			background: #2595e2;
+			border: 0;
+			border-radius: 4px;
+			height: 36px;
+			padding: 0 10px;
+			margin-left: 6px;
+
+			font: 14px 'robotoregular';
+			color: #fff;
+
+			&:hover {
+				background: #2587cb;
+			}
+
+		}
+
 	}
 
 }
